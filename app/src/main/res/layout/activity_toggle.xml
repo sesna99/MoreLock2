@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SwitchButtonStyleMD"
+                android:layout_margin="25dp" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SwitchButtonStyleMD"
+                android:layout_margin="25dp" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SwitchButtonStyleMD"
+                android:layout_margin="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SwitchButtonStyleMD"
+                android:layout_margin="25dp" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SwitchButtonStyleMD"
+                android:layout_margin="25dp" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SwitchButtonStyleMD"
+                android:layout_margin="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SwitchButtonStyleMD"
+                android:layout_margin="25dp" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SwitchButtonStyleMD"
+                android:layout_margin="25dp" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SwitchButtonStyleMD"
+                android:layout_margin="25dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/touch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.not.equal.morelock">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <application
+        android:name=".login.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="igaworks_app_key" android:value="470690872" />
+        <meta-data android:name="igaworks_hash_key" android:value="98c6a6dcf7cf4d18" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="759d2b9d37ac7dea4c60e15371d70d22" />
+
+        <activity android:name=".login.LoginActivity" />
+
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/title_activity_main">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".login.KakaoSignupActivity"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity android:name=".lock.LockMain"/>
+
+        <activity android:name=".lock.LockSetting" />
+
+        <activity android:name=".Setting" />
+
+        <activity android:name=".lock.LockActivity" android:theme="@style/Theme.AppCompat" />
+
+        <activity
+            android:name="com.fpang.lib.AdSyncList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.AdSync" />
+
+        <activity
+            android:name= "com.fpang.lib.FreePangPang"
+            android:screenOrientation= "portrait"
+            android:theme="@style/AppTheme.AdSync"/>
+
+        <service android:name=".service.ScreenService" />
+
+        <receiver android:name=".service.ScreenReceiver" />
+    </application>
+
+</manifest>

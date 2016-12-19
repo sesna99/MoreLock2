@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:background="#adadad">
+    //lock_text_01~lock_text_04 = 텍스트 변경이 필요한것 (ex #LOCK NAME , 다운로드수)
+    //lock_btn_01~lock_btn_02 = 버튼
+    //lock_textbtn_01~lock_textbtn_02 = 텍스트 뷰인데 버튼용도로 쓰이는것
+    //lock_id_01 = 메인 이미지 (ex 현재는 나무인것)
+    //lock_addbtn_01 = 아래 플러스 버튼
+    <FrameLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/lock_name"
+                    android:background="#aaffffff"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="#LOCK NAME"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:background="#ffffff"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp">
+        <LinearLayout
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="15"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="6"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/heart_view01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/lock_text_02"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:text="3221"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/lock_text_03"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:text="다운로드수 : 20"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:orientation="vertical"
+        android:weightSum="6">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:id="@+id/contents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <TextView
+                android:id="@+id/heart_btn"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/heart_cheak01"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:textColor="#000000"
+                android:id="@+id/present"
+                android:textSize="15dp"
+                android:text="선물하기"
+                android:background="@drawable/pr_bar_01"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/apply"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:text="구매하기"
+                android:background="@drawable/buy_bar_01"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
